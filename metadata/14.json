@@ -1,0 +1,21 @@
+{
+    "id": "14",
+    "name": "Kakuna",
+    "type": ["Bug", "Poison"],
+    "hp": 45,
+    "attack": 25,
+    "defense": 50,
+    "speed": 35,
+    "moves": [21, 21, 21],
+    "status": {
+      "currentHP": 45,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

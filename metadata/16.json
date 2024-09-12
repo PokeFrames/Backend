@@ -1,0 +1,21 @@
+{
+    "id": "16",
+    "name": "Pidgey",
+    "type": ["Normal", "Flying"],
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "speed": 56,
+    "moves": [1, 22, 28],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

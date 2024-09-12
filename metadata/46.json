@@ -1,0 +1,22 @@
+{
+    "id": "46",
+    "name": "Paras",
+    "type": ["Bug", "Grass"],
+    "hp": 35,
+    "attack": 70,
+    "defense": 55,
+    "speed": 25,
+    "moves": [28, 15, 18],
+    "status": {
+      "currentHP": 35,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "44",
+    "name": "Gloom",
+    "type": ["Grass", "Poison"],
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "speed": 40,
+    "moves": [15, 21, 38],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

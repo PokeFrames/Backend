@@ -1,0 +1,21 @@
+{
+    "id": "21",
+    "name": "Spearow",
+    "type": ["Normal", "Flying"],
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "speed": 70,
+    "moves": [32, 33, 27],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

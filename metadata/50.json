@@ -1,0 +1,22 @@
+{
+    "id": "50",
+    "name": "Diglett",
+    "type": ["Ground"],
+    "hp": 10,
+    "attack": 55,
+    "defense": 25,
+    "speed": 95,
+    "moves": [10, 28, 20],
+    "status": {
+      "currentHP": 10,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

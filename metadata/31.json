@@ -1,0 +1,22 @@
+{
+    "id": "31",
+    "name": "Nidoqueen",
+    "type": ["Poison", "Ground"],
+    "hp": 90,
+    "attack": 92,
+    "defense": 87,
+    "speed": 76,
+    "moves": [33, 8, 34],
+    "status": {
+      "currentHP": 90,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

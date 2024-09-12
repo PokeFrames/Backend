@@ -1,0 +1,21 @@
+{
+    "id": "1",
+    "name": "Bulbasaur",
+    "type": ["Grass", "Poison"],
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "speed": 45,
+    "moves": [1, 2, 3],
+    "status": {
+      "currentHP": 45,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

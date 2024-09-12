@@ -1,0 +1,22 @@
+{
+    "id": "38",
+    "name": "Ninetales",
+    "type": ["Fire"],
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "speed": 100,
+    "moves": [52, 10, 29],
+    "status": {
+      "currentHP": 73,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

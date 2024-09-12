@@ -1,0 +1,21 @@
+{
+    "id": "12",
+    "name": "Butterfree",
+    "type": ["Bug", "Flying"],
+    "hp": 60,
+    "attack": 45,
+    "defense": 50,
+    "speed": 70,
+    "moves": [22, 23, 6],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

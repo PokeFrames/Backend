@@ -1,0 +1,21 @@
+{
+    "id": "13",
+    "name": "Weedle",
+    "type": ["Bug", "Poison"],
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "speed": 50,
+    "moves": [1, 24, 20],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }

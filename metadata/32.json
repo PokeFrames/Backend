@@ -1,0 +1,22 @@
+{
+    "id": "32",
+    "name": "Nidoran♂",
+    "type": ["Poison"],
+    "hp": 46,
+    "attack": 57,
+    "defense": 40,
+    "speed": 50,
+    "moves": [3, 24, 33],
+    "status": {
+      "currentHP": 46,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

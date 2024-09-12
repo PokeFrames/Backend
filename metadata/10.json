@@ -1,0 +1,21 @@
+{
+    "id": "10",
+    "name": "Caterpie",
+    "type": ["Bug"],
+    "hp": 45,
+    "attack": 30,
+    "defense": 35,
+    "speed": 45,
+    "moves": [1, 20, 39],
+    "status": {
+      "currentHP": 45,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
