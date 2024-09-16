@@ -1,30 +1,10 @@
 import db from "../database.js";
 import Battle from "../Models/Battle.js";
 import pokemons from "../utils/pokemons.js";
-import { localSigner, provider } from "../ethers.js";
-import { ethers } from "ethers";
+
 import { bothPlayersMoved, createBattleInstance, getBattleFromDb, isUserPartOfBattle, performBattle, updateBattleInDatabase, updateMove } from "../utils/battleUtils.js";
 import { moveset } from "../utils/moveset.js";
 import { MT19937 } from "../utils/MT19937.js";
-
-/* Essa função serve apenas para facilitar o mint de pokemons */
-export const sendTransaction = async (req, res) => {
-  try {
-    const connectedLocalSigner = localSigner.connect(provider);
-
-    const tx = {
-      to: process.env.RECEIVER_ADDRESS,
-      value: ethers.utils.parseEther('0.000777')
-    }
-
-    const transaction = await connectedLocalSigner.sendTransaction(tx);
-    const receipt = await transaction.wait();
-
-    res.status(200).json({ message: 'Transaction sent successfully', receipt });
-  } catch (err) {
-    console.log(err);
-  }
-}
 
 /* função vai deixar de existir, apenas por smart contract no front */
 export const assignPokemon = async (req, res) => {
