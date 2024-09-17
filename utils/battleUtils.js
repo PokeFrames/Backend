@@ -13,7 +13,7 @@ export const getBattleFromDb = async (battleId) => {
 }
 
 export const createBattleInstance = (row) => {
-  return new Battle(row.id, row.maker, row.taker, JSON.parse(row.maker_pokemons), JSON.parse(row.maker_battling_pokemons), JSON.parse(row.taker_pokemons), JSON.parse(row.taker_battling_pokemons), row.maker_move, row.taker_move, row.status, row.current_turn, JSON.parse(row.battle_log));
+  return new Battle(row.id, row.maker, row.taker, JSON.parse(row.maker_pokemons), JSON.parse(row.maker_battling_pokemons), JSON.parse(row.taker_pokemons), JSON.parse(row.taker_battling_pokemons), row.maker_move, row.taker_move, row.status, row.current_turn, row.is_competitive, JSON.parse(row.battle_log));
 }
 
 export const isUserPartOfBattle = (battle, userId) => {
