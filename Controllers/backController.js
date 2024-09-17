@@ -14,7 +14,7 @@ export const assignPokemon = async (req, res) => {
 
   const mt = new MT19937(timestamp);
 
-  const pokemonId = mt.randomPokemon(1,25);
+  const pokemonId = mt.randomPokemon(1,50);
 
   db.get('SELECT * FROM players WHERE playerid = ?', [senderId], (err, row) => {
     if (err) {
@@ -41,6 +41,39 @@ export const assignPokemon = async (req, res) => {
       res.status(200).json({ message: 'Pokemon assigned successfully', pokemonId });
     });    
   })
+}
+
+export const welcomeGift = async (req, res) => {
+  const { userFid, userAddress } = req.body;
+
+  console.log('Received welcome gift request', req.body);
+
+  db.get('SELECT * FROM players WHERE playerid = ?', [userFid], (err, row) => {
+    if (err) {
+      throw err;
+    }
+    
+    const player = row;
+    
+    if(!player) {
+      console.log('Player not found, creating new player');
+      const timestamp = Math.floor(Date.now() / 1000);
+    
+      const mt = new MT19937(timestamp);
+    
+      const pokemons = [];
+      for (let i = 0; i < 5; i++) {
+        pokemons.push(mt.randomPokemon(1, 50)); //only 50 pokemon available for now
+      }
+
+      db.run('INSERT INTO players (playerid, wallet, inventory) VALUES (?, ?, ?)', [userFid, userAddress, JSON.stringify(pokemons)]);
+
+      console.log('New player created successfully');
+      return res.status(200).json({ message: 'New Player created successfully', pokemons });
+    }
+  })
+  console.log('Player already exists');
+  res.status(200).json({ message: 'Welcome gift already claimed' });
 }
 
 /* trocar para um read no smart contract */

@@ -17,7 +17,7 @@ db.serialize(() => {
   db.run('CREATE TABLE IF NOT EXISTS battle_logs (battle_id INTEGER PRIMARY KEY, log TEXT)');
 
   db.run('INSERT OR REPLACE INTO players (playerid, wallet, inventory, battles) VALUES (?, ?, ?, ?)', [1, "0x86924c37a93734e8611eb081238928a9d18a63c0", '[25,11,6,47,27,36,9]', '[]']); //create with few pokemons for testing
-  db.run('INSERT OR REPLACE INTO players (playerid, wallet, inventory, battles) VALUES (?, ?, ?, ?)', [397059, "0xC1bd4Aa0a9ca600FaF690ae4aB67F15805d8b3A1", '[25,11,6,47,27,36,9]', '[]']); //create with few pokemons for testing
+  // db.run('INSERT OR REPLACE INTO players (playerid, wallet, inventory, battles) VALUES (?, ?, ?, ?)', [397059, "0xC1bd4Aa0a9ca600FaF690ae4aB67F15805d8b3A1", '[25,11,6,47,27,36,9]', '[]']); //create with few pokemons for testing
 })
 
 export default db;
