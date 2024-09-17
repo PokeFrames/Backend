@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { assignPokemon, createBattle, forfeitBattle, getBattleById, getBattleIdByStatus, getPokemonById, getPokemonName, getUserBattlesByFid, getUserBattlesByWallet, joinBattle, makeMove, pokemonsByPlayerId, selectPokemons } from '../Controllers/backController.js';
+import { assignPokemon, createBattle, forfeitBattle, getBattleById, getBattlesByStatus, getPokemonById, getPokemonName, getUserBattlesByFid, getUserBattlesByWallet, joinBattle, makeMove, pokemonsByPlayerId, selectPokemons } from '../Controllers/backController.js';
 import { registerConverseWallet, retrieveFidFromConverseWallet } from '../Controllers/subscribeController.js';
 
 const router = express.Router();
@@ -17,7 +17,7 @@ router.get('/battle/:id', getBattleById);
 router.get('/user/:id/pokemons', pokemonsByPlayerId);
 router.get('/pokemon/:id', getPokemonById);
 router.get('/pokemon/:id/name', getPokemonName);
-router.get('/get/:status', getBattleIdByStatus);
+router.get('/get/:status', getBattlesByStatus);
 router.get('/converse-user/:wallet/battles', getUserBattlesByWallet);
 router.get('/user/:fid/battles', getUserBattlesByFid);
 

@@ -66,17 +66,55 @@ export const pokemonsByPlayerId = async (req, res) => {
   });
 }
 
-export const getBattleIdByStatus = async (req, res) => {
+export const getBattlesByStatus = async (req, res) => {
   const { status } = req.params;
-  db.all('SELECT * FROM battles WHERE status = ?', [status], (err, col) => {
+  db.all('SELECT * FROM battles WHERE status = ?', [status], (err, rows) => {
     if (err) {
-      return res.status(500).json({ message: 'Error getting ids', error: err.message });
+      return res.status(500).json({ message: 'Error getting battle data', error: err.message });
     }
-    const battles = col;
-    const battleIds = battles.map(battle => battle.id);
-    res.status(200).json({battles: battleIds});
-  })
-}
+
+    if (rows.length === 0) {
+      return res.status(404).json({ message: `No ${status} battles found` });
+    }
+
+    let battles;
+    switch (status) {
+      case 'waiting':
+        battles = rows.map(row => ({
+          id: row.id,
+          maker: row.maker,
+          maker_pokemons: row.maker_pokemons,
+          is_competitive: row.is_competitive,
+        }));
+        break;
+      case 'ongoing':
+        battles = rows.map(row => ({
+          id: row.id,
+          maker: row.maker,
+          maker_pokemons: row.maker_pokemons,
+          taker: row.taker,
+          taker_pokemons: row.taker_pokemons,
+          is_competitive: row.is_competitive,
+        }));
+        break;
+      case 'ended':
+        battles = rows.map(row => ({
+          id: row.id,
+          maker: row.maker,
+          maker_pokemons: row.maker_pokemons,
+          taker: row.taker,
+          taker_pokemons: row.taker_pokemons,
+          battle_log: row.battle_log,
+          is_competitive: row.is_competitive,
+        }));
+        break;
+      default:
+        return res.status(400).json({ message: 'Invalid status' });
+    }
+
+    res.status(200).json({ battles });
+  });
+};
 
 export const createBattle = async (req, res) => {
   try {
