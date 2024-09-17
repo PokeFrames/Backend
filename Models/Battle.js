@@ -1,5 +1,5 @@
 class Battle {
-  constructor(id, maker, taker, maker_pokemons, maker_battling_pokemons, taker_pokemons, taker_battling_pokemons, maker_move, taker_move, status, current_turn, battle_log) {
+  constructor(id, maker, taker, maker_pokemons, maker_battling_pokemons, taker_pokemons, taker_battling_pokemons, maker_move, taker_move, status, current_turn, is_competitive, battle_log) {
     this.id = id;
     this.maker = maker;
     this.taker = taker;
@@ -11,6 +11,7 @@ class Battle {
     this.taker_move = taker_move;
     this.status = status;
     this.current_turn = current_turn;
+    this.is_competitive = is_competitive;
     this.battle_log = battle_log; 
   }
 }

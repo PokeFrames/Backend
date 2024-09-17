@@ -82,6 +82,16 @@ export const createBattle = async (req, res) => {
   try {
     const { maker, maker_pokemons } = req.body;
 
+    let {isCompetitive} = req.body.isCompetitive;
+
+    if(!isCompetitive) {
+      isCompetitive = 0;
+    }
+    
+    if(isCompetitive != 1 && isCompetitive != 0) {
+      return res.status(400).json({ message: 'isCompetitive must be 0 or 1' });
+    }
+
     // maker_pokemons is an array of pokemon IDs
     // we need to convert it to an array of pokemon objects
     const makerPokemons = [];
@@ -96,12 +106,12 @@ export const createBattle = async (req, res) => {
       })
     });
 
-    const newBattle = new Battle(null, maker, null, JSON.stringify(makerPokemons), null, null, null, null, null, 'waiting', 0, null);
+    const newBattle = createBattleInstance({ id: null, maker, taker: null, maker_pokemons: JSON.stringify(makerPokemons), maker_battling_pokemons: '[0,1]', taker_pokemons: null, taker_battling_pokemons: null, maker_move: null, taker_move: null, status: 'waiting', current_turn: 0, is_competitive: isCompetitive, battle_log: '[]' });
 
-    const insert = db.prepare('INSERT INTO battles (maker, maker_pokemons, maker_battling_pokemons, status, current_turn, battle_log) VALUES (?, ?, ?, ?, ?, ?)');
+    const insert = db.prepare('INSERT INTO battles (maker, maker_pokemons, maker_battling_pokemons, status, current_turn, is_competitive, battle_log) VALUES (?, ?, ?, ?, ?, ?, ?)');
     
     // Executa a inserção e obtém o ID do registro recém inserido
-    insert.run(newBattle.maker, newBattle.maker_pokemons, '[0,1]', newBattle.status, 0, '[]', function(err) {
+    insert.run(newBattle.maker, JSON.stringify(makerPokemons), '[0,1]', newBattle.status, 0, isCompetitive, '[]', function(err) {
       if (err) {
         return res.status(500).json({ message: 'Error creating battle', error: err.message });
       }
