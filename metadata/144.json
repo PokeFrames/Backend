@@ -1,0 +1,22 @@
+{
+    "id": "144",
+    "name": "Articuno",
+    "type": ["Ice", "Flying"],
+    "hp": 90,
+    "attack": 85,
+    "defense": 100,
+    "speed": 85,
+    "moves": [61, 67, 50, 29, 48],
+    "status": {
+      "currentHP": 90,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

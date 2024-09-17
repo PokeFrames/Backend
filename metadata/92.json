@@ -1,0 +1,22 @@
+{
+    "id": "92",
+    "name": "Gastly",
+    "type": ["Ghost", "Poison"],
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "speed": 80,
+    "moves": [52, 55, 57, 66, 49, 23, 62, 68],
+    "status": {
+      "currentHP": 30,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

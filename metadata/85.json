@@ -1,0 +1,22 @@
+{
+    "id": "85",
+    "name": "Dodrio",
+    "type": ["Normal", "Flying"],
+    "hp": 60,
+    "attack": 110,
+    "defense": 70,
+    "speed": 100,
+    "moves": [32, 33, 34, 40, 22, 67, 96, 95, 95, 43],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

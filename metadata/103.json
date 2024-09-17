@@ -1,0 +1,22 @@
+{
+    "id": "103",
+    "name": "Exeggutor",
+    "type": ["Grass", "Psychic"],
+    "hp": 95,
+    "attack": 95,
+    "defense": 85,
+    "speed": 55,
+    "moves": [41, 6, 7, 57, 49, 74, 70],
+    "status": {
+      "currentHP": 95,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

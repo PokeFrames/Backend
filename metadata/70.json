@@ -1,0 +1,22 @@
+{
+    "id": "70",
+    "name": "Weepinbell",
+    "type": ["Grass", "Poison"],
+    "hp": 65,
+    "attack": 90,
+    "defense": 50,
+    "speed": 55,
+    "moves": [2, 55, 7, 70, 6, 74, 48, 42, 45],
+    "status": {
+      "currentHP": 65,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

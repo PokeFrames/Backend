@@ -1,0 +1,22 @@
+{
+    "id": "77",
+    "name": "Ponyta",
+    "type": ["Fire"],
+    "hp": 50,
+    "attack": 85,
+    "defense": 55,
+    "speed": 90,
+    "moves": [9, 89, 84, 92, 66, 38, 79, 100],
+    "status": {
+      "currentHP": 50,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

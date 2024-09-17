@@ -1,0 +1,22 @@
+{
+    "id": "121",
+    "name": "Starmie",
+    "type": ["Water", "Psychic"],
+    "hp": 60,
+    "attack": 75,
+    "defense": 85,
+    "speed": 115,
+    "moves": [14, 16, 50, 61, 23, 63, 70, 64, 49, 64],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

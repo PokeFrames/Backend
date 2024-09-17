@@ -1,0 +1,22 @@
+{
+    "id": "108",
+    "name": "Lickitung",
+    "type": ["Normal"],
+    "hp": 90,
+    "attack": 55,
+    "defense": 75,
+    "speed": 30,
+    "moves": [40, 17, 48, 45, 44, 63, 37],
+    "status": {
+      "currentHP": 90,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

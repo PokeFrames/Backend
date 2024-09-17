@@ -5,7 +5,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const numberOfFiles = 50; //number of pokemons (should work)
+const numberOfFiles = 151; //number of pokemons (should work)
 
 const pokemons = [];
 

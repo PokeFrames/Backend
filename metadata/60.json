@@ -1,0 +1,22 @@
+{
+    "id": "60",
+    "name": "Poliwag",
+    "type": ["Water"],
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "speed": 90,
+    "moves": [14, 15, 16, 18, 62],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "101",
+    "name": "Electrode",
+    "type": ["Electric"],
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "speed": 150,
+    "moves": [37, 56, 76, 99, 38, 84],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

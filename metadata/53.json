@@ -1,0 +1,22 @@
+{
+    "id": "53",
+    "name": "Persian",
+    "type": ["Normal"],
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "speed": 115,
+    "moves": [8, 40, 36, 31, 56],
+    "status": {
+      "currentHP": 65,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

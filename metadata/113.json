@@ -1,0 +1,22 @@
+{
+    "id": "113",
+    "name": "Chansey",
+    "type": ["Normal"],
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "speed": 50,
+    "moves": [42, 46, 47, 102, 43, 60, 62, 66, 71],
+    "status": {
+      "currentHP": 250,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

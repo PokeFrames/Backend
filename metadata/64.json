@@ -1,0 +1,22 @@
+{
+    "id": "64",
+    "name": "Kadabra",
+    "type": ["Psychic"],
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "speed": 105,
+    "moves": [60, 49, 23, 48, 43, 52],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

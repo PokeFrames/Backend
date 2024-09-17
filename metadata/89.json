@@ -1,0 +1,22 @@
+{
+    "id": "89",
+    "name": "Muk",
+    "type": ["Poison"],
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "speed": 50,
+    "moves": [24, 55, 57, 63, 66, 35, 25, 56, 101, 52, 54, 90],
+    "status": {
+      "currentHP": 105,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

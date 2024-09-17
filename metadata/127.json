@@ -1,0 +1,22 @@
+{
+    "id": "127",
+    "name": "Pinsir",
+    "type": ["Bug"],
+    "hp": 65,
+    "attack": 125,
+    "defense": 100,
+    "speed": 85,
+    "moves": [12, 22, 69, 77, 96, 40, 41, 45, 54, 64],
+    "status": {
+      "currentHP": 65,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

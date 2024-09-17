@@ -1,0 +1,22 @@
+{
+    "id": "75",
+    "name": "Graveler",
+    "type": ["Rock", "Ground"],
+    "hp": 55,
+    "attack": 95,
+    "defense": 115,
+    "speed": 35,
+    "moves": [48, 51, 63, 53, 19, 35, 94],
+    "status": {
+      "currentHP": 55,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

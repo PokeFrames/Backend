@@ -1,0 +1,22 @@
+{
+    "id": "78",
+    "name": "Rapidash",
+    "type": ["Fire"],
+    "hp": 65,
+    "attack": 100,
+    "defense": 70,
+    "speed": 105,
+    "moves": [9, 89, 84, 92, 66, 38, 79, 100, 96, 90],
+    "status": {
+      "currentHP": 65,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

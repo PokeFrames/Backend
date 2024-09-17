@@ -1,0 +1,22 @@
+{
+    "id": "118",
+    "name": "Goldeen",
+    "type": ["Water"],
+    "hp": 45,
+    "attack": 67,
+    "defense": 60,
+    "speed": 63,
+    "moves": [14, 16, 50, 61, 42, 23, 79, 77],
+    "status": {
+      "currentHP": 45,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

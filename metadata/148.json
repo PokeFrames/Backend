@@ -1,0 +1,22 @@
+{
+    "id": "148",
+    "name": "Dragonair",
+    "type": ["Dragon"],
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "speed": 70,
+    "moves": [85, 88, 87, 13, 83, 82],
+    "status": {
+      "currentHP": 61,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

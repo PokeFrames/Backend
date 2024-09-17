@@ -1,0 +1,22 @@
+{
+    "id": "63",
+    "name": "Abra",
+    "type": ["Psychic"],
+    "hp": 25,
+    "attack": 20,
+    "defense": 15,
+    "speed": 90,
+    "moves": [60, 49, 23, 48],
+    "status": {
+      "currentHP": 25,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

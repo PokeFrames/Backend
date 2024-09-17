@@ -14,7 +14,7 @@ export const assignPokemon = async (req, res) => {
 
   const mt = new MT19937(timestamp);
 
-  const pokemonId = mt.randomPokemon(1,50);
+  const pokemonId = mt.randomPokemon(1,151);
 
   db.get('SELECT * FROM players WHERE playerid = ?', [senderId], (err, row) => {
     if (err) {
@@ -64,7 +64,7 @@ export const welcomeGift = async (req, res) => {
 
       const pokemons = [];
       for (let i = 0; i < 5; i++) {
-        pokemons.push(mt.randomPokemon(1, 50)); //only 50 pokemon available for now
+        pokemons.push(mt.randomPokemon(1,151)); //only 151 pokemon available for now
       }
 
       console.log('Pokemons:', pokemons);

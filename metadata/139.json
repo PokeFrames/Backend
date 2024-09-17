@@ -1,0 +1,22 @@
+{
+    "id": "139",
+    "name": "Omastar",
+    "type": ["Rock", "Water"],
+    "hp": 70,
+    "attack": 60,
+    "defense": 125,
+    "speed": 55,
+    "moves": [14, 51, 62, 50, 16, 48, 63, 64],
+    "status": {
+      "currentHP": 70,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

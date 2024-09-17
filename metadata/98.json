@@ -1,0 +1,22 @@
+{
+    "id": "98",
+    "name": "Krabby",
+    "type": ["Water"],
+    "hp": 30,
+    "attack": 105,
+    "defense": 90,
+    "speed": 50,
+    "moves": [14, 28, 35, 17, 48],
+    "status": {
+      "currentHP": 30,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "149",
+    "name": "Dragonite",
+    "type": ["Dragon", "Flying"],
+    "hp": 91,
+    "attack": 134,
+    "defense": 95,
+    "speed": 80,
+    "moves": [85, 88, 87, 13, 83, 82, 64, 90, 95],
+    "status": {
+      "currentHP": 91,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "111",
+    "name": "Rhyhorn",
+    "type": ["Ground", "Rock"],
+    "hp": 80,
+    "attack": 85,
+    "defense": 95,
+    "speed": 25,
+    "moves": [51, 63, 28, 48, 56],
+    "status": {
+      "currentHP": 80,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

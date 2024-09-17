@@ -1,0 +1,22 @@
+{
+    "id": "136",
+    "name": "Flareon",
+    "type": ["Fire"],
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "speed": 65,
+    "moves": [9, 10, 79, 80, 38, 42, 77, 90, 94],
+    "status": {
+      "currentHP": 65,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

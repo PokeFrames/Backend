@@ -1,0 +1,22 @@
+{
+    "id": "90",
+    "name": "Shellder",
+    "type": ["Water"],
+    "hp": 30,
+    "attack": 65,
+    "defense": 100,
+    "speed": 40,
+    "moves": [14, 50, 61, 24, 23, 22, 101],
+    "status": {
+      "currentHP": 30,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

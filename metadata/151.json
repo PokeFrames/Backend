@@ -1,0 +1,22 @@
+{
+    "id": "151",
+    "name": "Mew",
+    "type": ["Psychic"],
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "speed": 100,
+    "moves": [49, 64, 52, 48, 75, 78],
+    "status": {
+      "currentHP": 100,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "76",
+    "name": "Golem",
+    "type": ["Rock", "Ground"],
+    "hp": 80,
+    "attack": 120,
+    "defense": 130,
+    "speed": 45,
+    "moves": [48, 51, 63, 53, 19, 35, 94, 90, 61, 99],
+    "status": {
+      "currentHP": 80,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

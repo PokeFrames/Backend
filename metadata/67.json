@@ -1,0 +1,22 @@
+{
+    "id": "67",
+    "name": "Machoke",
+    "type": ["Fighting"],
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "speed": 45,
+    "moves": [54, 43, 44, 5, 59, 75],
+    "status": {
+      "currentHP": 80,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "141",
+    "name": "Kabutops",
+    "type": ["Rock", "Water"],
+    "hp": 60,
+    "attack": 115,
+    "defense": 105,
+    "speed": 80,
+    "moves": [14, 51, 62, 17, 44, 40, 43, 63],
+    "status": {
+      "currentHP": 60,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

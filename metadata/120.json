@@ -1,0 +1,22 @@
+{
+    "id": "120",
+    "name": "Staryu",
+    "type": ["Water"],
+    "hp": 30,
+    "attack": 45,
+    "defense": 50,
+    "speed": 85,
+    "moves": [14, 16, 50, 61, 23, 63, 70, 64],
+    "status": {
+      "currentHP": 30,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

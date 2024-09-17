@@ -1,0 +1,22 @@
+{
+    "id": "58",
+    "name": "Growlithe",
+    "type": ["Fire"],
+    "hp": 55,
+    "attack": 70,
+    "defense": 45,
+    "speed": 60,
+    "moves": [9, 10, 84, 92, 66],
+    "status": {
+      "currentHP": 55,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

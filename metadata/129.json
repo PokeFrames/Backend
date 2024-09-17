@@ -1,0 +1,22 @@
+{
+    "id": "129",
+    "name": "Magikarp",
+    "type": ["Water"],
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "speed": 80,
+    "moves": [14, 16, 20, 42, 79],
+    "status": {
+      "currentHP": 20,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

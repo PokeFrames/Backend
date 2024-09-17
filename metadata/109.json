@@ -1,0 +1,22 @@
+{
+    "id": "109",
+    "name": "Koffing",
+    "type": ["Poison"],
+    "hp": 40,
+    "attack": 65,
+    "defense": 95,
+    "speed": 35,
+    "moves": [55, 20, 57, 49, 72],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

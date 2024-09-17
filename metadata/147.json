@@ -1,0 +1,22 @@
+{
+    "id": "147",
+    "name": "Dratini",
+    "type": ["Dragon"],
+    "hp": 41,
+    "attack": 64,
+    "defense": 45,
+    "speed": 50,
+    "moves": [85, 88, 87, 13, 83],
+    "status": {
+      "currentHP": 41,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

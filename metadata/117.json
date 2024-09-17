@@ -1,0 +1,22 @@
+{
+    "id": "117",
+    "name": "Seadra",
+    "type": ["Water"],
+    "hp": 55,
+    "attack": 65,
+    "defense": 95,
+    "speed": 85,
+    "moves": [14, 16, 50, 61, 38, 42, 23, 77, 63, 64],
+    "status": {
+      "currentHP": 55,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "74",
+    "name": "Geodude",
+    "type": ["Rock", "Ground"],
+    "hp": 40,
+    "attack": 80,
+    "defense": 100,
+    "speed": 20,
+    "moves": [48, 51, 63, 53, 19, 35],
+    "status": {
+      "currentHP": 40,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

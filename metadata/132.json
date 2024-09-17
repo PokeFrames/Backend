@@ -1,0 +1,22 @@
+{
+    "id": "132",
+    "name": "Ditto",
+    "type": ["Normal"],
+    "hp": 48,
+    "attack": 48,
+    "defense": 48,
+    "speed": 48,
+    "moves": [1, 43, 46, 66, 78, 99],
+    "status": {
+      "currentHP": 48,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "id": "145",
+    "name": "Zapdos",
+    "type": ["Electric", "Flying"],
+    "hp": 90,
+    "attack": 90,
+    "defense": 85,
+    "speed": 100,
+    "moves": [37, 76, 67, 28, 48],
+    "status": {
+      "currentHP": 90,
+      "statusCondition": null,
+      "statusMultipliers": {
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "evasion": 0,
+        "accuracy": 0
+      }
+    }
+  }
+  
