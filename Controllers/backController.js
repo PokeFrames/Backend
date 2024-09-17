@@ -50,31 +50,41 @@ export const welcomeGift = async (req, res) => {
 
   db.get('SELECT * FROM players WHERE playerid = ?', [userFid], (err, row) => {
     if (err) {
-      throw err;
+      console.error('Error querying the database', err);
+      return res.status(500).json({ message: 'Database error' }); // Send error response if query fails
     }
     
     const player = row;
-    
-    if(!player) {
+
+    if (!player) {
       console.log('Player not found, creating new player');
       const timestamp = Math.floor(Date.now() / 1000);
-    
+
       const mt = new MT19937(timestamp);
-    
+
       const pokemons = [];
       for (let i = 0; i < 5; i++) {
         pokemons.push(mt.randomPokemon(1, 50)); //only 50 pokemon available for now
       }
 
-      db.run('INSERT INTO players (playerid, wallet, inventory) VALUES (?, ?, ?)', [userFid, userAddress, JSON.stringify(pokemons)]);
+      console.log('Pokemons:', pokemons);
 
-      console.log('New player created successfully');
-      return res.status(200).json({ message: 'New Player created successfully', pokemons });
+      db.run('INSERT INTO players (playerid, wallet, inventory) VALUES (?, ?, ?)', [userFid, userAddress, JSON.stringify(pokemons)], (insertErr) => {
+        if (insertErr) {
+          console.error('Error inserting new player', insertErr);
+          return res.status(500).json({ message: 'Failed to create new player' }); // Handle insertion errors
+        }
+
+        console.log('New player created successfully');
+        return res.status(200).json({ message: 'New Player created successfully' }); // Return response for new player creation
+      });
+    } else {
+      console.log('Player already exists');
+      return res.status(200).json({ message: 'Welcome gift already claimed' }); // Send response when player already exists
     }
-  })
-  console.log('Player already exists');
-  res.status(200).json({ message: 'Welcome gift already claimed' });
-}
+  });
+};
+
 
 /* trocar para um read no smart contract */
 export const pokemonsByPlayerId = async (req, res) => {
