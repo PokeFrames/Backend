@@ -120,14 +120,14 @@ export const createBattle = async (req, res) => {
   try {
     const { maker, maker_pokemons } = req.body;
 
-    let {isCompetitive} = req.body.isCompetitive;
+    let is_competitive = req.body.is_competitive;
 
-    if(!isCompetitive) {
-      isCompetitive = 0;
+    if(!is_competitive) {
+      is_competitive = 0;
     }
     
-    if(isCompetitive != 1 && isCompetitive != 0) {
-      return res.status(400).json({ message: 'isCompetitive must be 0 or 1' });
+    if(is_competitive != 1 && is_competitive != 0) {
+      return res.status(400).json({ message: 'is_competitive must be 0 or 1' });
     }
 
     // maker_pokemons is an array of pokemon IDs
@@ -144,12 +144,12 @@ export const createBattle = async (req, res) => {
       })
     });
 
-    const newBattle = createBattleInstance({ id: null, maker, taker: null, maker_pokemons: JSON.stringify(makerPokemons), maker_battling_pokemons: '[0,1]', taker_pokemons: null, taker_battling_pokemons: null, maker_move: null, taker_move: null, status: 'waiting', current_turn: 0, is_competitive: isCompetitive, battle_log: '[]' });
+    const newBattle = createBattleInstance({ id: null, maker, taker: null, maker_pokemons: JSON.stringify(makerPokemons), maker_battling_pokemons: '[0,1]', taker_pokemons: null, taker_battling_pokemons: null, maker_move: null, taker_move: null, status: 'waiting', current_turn: 0, is_competitive: is_competitive, battle_log: '[]' });
 
     const insert = db.prepare('INSERT INTO battles (maker, maker_pokemons, maker_battling_pokemons, status, current_turn, is_competitive, battle_log) VALUES (?, ?, ?, ?, ?, ?, ?)');
     
     // Executa a inserção e obtém o ID do registro recém inserido
-    insert.run(newBattle.maker, JSON.stringify(makerPokemons), '[0,1]', newBattle.status, 0, isCompetitive, '[]', function(err) {
+    insert.run(newBattle.maker, JSON.stringify(makerPokemons), '[0,1]', newBattle.status, 0, is_competitive, '[]', function(err) {
       if (err) {
         return res.status(500).json({ message: 'Error creating battle', error: err.message });
       }
